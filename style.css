@@ -1,7 +1,7 @@
 /*Pallete 
 Primary: #041a40;
 Accent: #d69c38;
-Complimentary: #3a465a;
+Complimentary: #3a465a; 
 neutra2: #395a93;
 font: #fffdfa;
 highlights: #d4962b;
@@ -28,6 +28,7 @@ font-family: 'Fauna One', serif;
     --clr-text-dark: hsl(218, 21%, 15%);
 
     --clr-confirm-button: hsl(125, 60%, 35%);
+    --clr-h1: var(--clr-accent);
 
     /*-------------------
     Fonts
@@ -122,7 +123,7 @@ HERO
 
     text-align: center;
 
-    color: var(--clr-highlight-text);
+    color: var(--clr-h1);
 
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
@@ -141,6 +142,7 @@ HERO
 
     font-family: var(--ff-secondary);
     font-weight: var(--fw-semi-bold);
+
     font-style: italic;
 }
 
@@ -172,9 +174,8 @@ FEATURES
     line-height: 1;
     text-align: left;
     font-family: var(--ff-secondary);
-    font-size: var(--fs-large);
+    font-size: var(--fs-medium);
     font-weight: var(--fw-semi-bold);
-    font-style: italic;
 }
 
 .feature__description {

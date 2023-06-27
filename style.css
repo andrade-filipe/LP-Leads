@@ -85,11 +85,11 @@ Header
 ---------------------*/
 
 .header {
-    font-size: var(--fs-large);
+    font-size: var(--fs-medium);
     font-weight: var(--fw-bold);
     font-family: var(--ff-primary);
 
-    padding: var(--sz-700);
+    padding: var(--sz-400);
 }
 
 .header .container {
@@ -99,7 +99,7 @@ Header
 }
 
 .header .header__logo-img {
-    width: 7rem;
+    width: 4rem;
 }
 
 .header a {
@@ -110,7 +110,7 @@ Header
 }
 
 .header__empresa-div {
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 /*-------------------

@@ -206,8 +206,6 @@ CTA
 }
 
 .cta__description {
-    background-color: var(--clr-complement-300);
-
     margin-top: var(--sz-500);
 
     text-align: center;

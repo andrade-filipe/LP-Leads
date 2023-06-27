@@ -1,0 +1,283 @@
+/*Pallete 
+Primary: #041a40;
+Accent: #d69c38;
+Complimentary: #3a465a;
+neutra2: #395a93;
+font: #fffdfa;
+highlights: #d4962b;
+dark font: #1e242e;
+*/
+
+/*
+Fonts
+font-family: 'Cinzel', serif;
+font-family: 'Fauna One', serif;
+*/
+
+:root {
+    /*-------------------
+    COLORS
+    ---------------------*/
+    --clr-primary: hsl(218, 88%, 13%);
+    --clr-accent: hsl(38, 66%, 53%);
+    --clr-complement-700: hsl(218, 22%, 29%);
+    --clr-complement-300: hsl(218, 44%, 40%);
+
+    --clr-text: hsl(36, 100%, 99%);
+    --clr-highlight-text: hsl(38, 66%, 50%);
+    --clr-text-dark: hsl(218, 21%, 15%);
+
+    --clr-confirm-button: hsl(125, 60%, 35%);
+
+    /*-------------------
+    Fonts
+    ---------------------*/
+
+    --ff-primary: 'Cinzel', serif;
+    --ff-secondary: 'Fauna One', serif;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 800;
+
+    --fs-xsmall: 0.875rem; /*14 px*/
+    --fs-small: 1rem; /*16 px*/
+    --fs-normal: 1.175rem; /*18 px*/
+    --fs-medium: 1.3125rem; /*21 px*/
+    --fs-large: 2rem; /*32 px*/
+    --fs-xlarge: 2.625rem; /*42 px*/
+    --fs-biggerscreen: 3.2rem; /*51 px*/
+
+    --fs-body: var(--fs-normal);
+    --fs-primary-heading: var(--fs-xlarge);
+    --fs-secondary-heading: var(--fs-large);
+
+    /*-------------------
+    SIZES
+    ---------------------*/
+
+    --sz-100: 0.25rem;
+    --sz-200: 0.50rem;
+    --sz-300: 0.75rem;
+    --sz-400: 1rem;
+    --sz-500: 1.5rem;
+    --sz-600: 2rem;
+    --sz-700: 3rem;
+    --sz-800: 4rem;
+    --sz-900: 5rem;
+}
+
+/*-------------------
+GENERAL STYLES
+---------------------*/
+
+body {
+    background-color: var(--clr-primary);
+    color: var(--clr-text);
+
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-regular);
+}
+
+/*-------------------
+Header
+---------------------*/
+
+.header {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-primary);
+
+    padding: var(--sz-700);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.header .header__logo-img {
+    width: 7rem;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--clr-text);
+    font-family: var(--ff-primary);
+    text-align: center;
+}
+
+.header__empresa-div {
+    padding-top: 10%;
+}
+
+/*-------------------
+HERO
+---------------------*/
+
+.hero__title {
+    padding-bottom: var(--sz-700);
+
+    text-align: center;
+
+    color: var(--clr-highlight-text);
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-biggerscreen);
+    line-height: 0.9;
+}
+
+.hero__subtitle {
+    padding: var(--sz-300);
+
+    background-color: var(--clr-complement-300);
+
+    color: var(--clr-text);
+
+    text-align: center;
+
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-semi-bold);
+    font-style: italic;
+}
+
+@media (max-width: 992px) {
+    .hero__title {
+        font-size: var(--fs-xlarge);
+    }
+}
+
+/*-------------------
+FEATURES
+---------------------*/
+
+.feature {
+    height: fit-content;
+
+    padding: var(--sz-400);
+    margin-bottom: var(--sz-400);
+
+    border: 5px solid var(--clr-complement-300);
+}
+
+.feature__title {
+    padding: var(--sz-200);
+
+    background-color: var(--clr-complement-300);
+    color: var(--clr-text);
+
+    line-height: 1;
+    text-align: left;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-large);
+    font-weight: var(--fw-semi-bold);
+    font-style: italic;
+}
+
+.feature__description {
+    margin-top: var(--sz-300);
+
+    text-align: justify;
+
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-regular);
+
+    line-height: 1.5;
+}
+
+/*-------------------
+CTA
+---------------------*/
+
+.cta__title {
+    margin-top: var(--sz-700);
+    text-align: center;
+
+    color: var(--clr-highlight-text);
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-xlarge);
+    line-height: 0.9;
+}
+
+.cta__description {
+    background-color: var(--clr-complement-300);
+
+    margin-top: var(--sz-500);
+
+    text-align: center;
+
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-semi-bold);
+
+    line-height: 1.5;
+}
+
+.cta__description span {
+    color: var(--clr-accent)
+}
+
+@media (max-width: 992px) {
+    .cta__title {
+        font-size: var(--fs-large);
+    }
+}
+
+/*-------------------
+FORM
+---------------------*/
+
+.cta__form {
+    margin: var(--sz-600);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: var(--sz-300);
+}
+
+.cta__submit {
+    padding: var(--sz-300);
+    border: 0;
+
+    color: var(--clr-text-dark);
+    background-color: var(--clr-accent);
+
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+}
+
+.cta__submit:hover,
+.cta__submit:focus {
+    --bs-btn-active-bg: var(--clr-confirm-button);
+    background-color: var(--clr-confirm-button);
+}
+
+@media (min-width: 992px) {
+    .form-group {
+        margin-right: 7.5rem;
+        margin-left: 7.5rem;
+    }
+}
+
+/*-------------------
+Footer
+---------------------*/
+
+.footer {
+    text-align: center;
+    background-color: var(--clr-complement-700) ;
+    padding: var(--sz-700);
+    margin-top: var(--sz-700);
+}
+
+.footer__item {
+    font-size: var(--fs-xsmall);
+    font-family: var(--ff-secondary);
+}
